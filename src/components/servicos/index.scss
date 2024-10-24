@@ -1,0 +1,47 @@
+.pagina-servico {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  .imagem-container {
+    width: 360px;
+    height: 325px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .info-container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+
+    &.distribuido {
+      justify-content: space-between; /* Distribui o título e o valor */
+    }
+
+    &.centralizado {
+      justify-content: center; /* Centraliza o título */
+      text-align: center;
+    }
+  }
+
+  .titulo-servico {
+    font-size: 1.2rem;
+    color: #000000;
+    font-weight: bold;
+  }
+
+  .valor-servico {
+    background-color: #000;
+    color: #fff;
+    padding: 7px 11px;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+}
